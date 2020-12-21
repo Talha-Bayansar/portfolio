@@ -1,7 +1,15 @@
-import "./App.css";
+import styled from "styled-components";
+
+const StyledApp = styled.const`
+  display: block;
+`;
 
 function App() {
-  return <div className="App">Talha Bayansar</div>;
+  return (
+    <StyledApp className="App">
+      <h1>Talha Bayansar</h1>
+    </StyledApp>
+  );
 }
 
 export default App;
