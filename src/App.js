@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import About from "./components/about";
 import BrowserWindow from "./components/browser_window";
 
 const StyledApp = styled.div`
@@ -11,7 +12,7 @@ function App() {
   return (
     <StyledApp className="App">
       <h1>Talha Bayansar</h1>
-      <BrowserWindow />
+      <About />
     </StyledApp>
   );
 }
