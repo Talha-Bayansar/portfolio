@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import CloseIcon from "@material-ui/icons/Close";
 import StopOutlinedIcon from "@material-ui/icons/StopOutlined";
@@ -41,19 +41,25 @@ const StyledBrowserWindow = styled.div`
   }
 
   & > .browserWindow-body {
-    padding: 1rem;
+    padding: ${(props) => !props.isMinimized && "1rem"};
+    overflow: hidden;
+    height: ${(props) => props.isMinimized && "0px"};
   }
 `;
 
 function BrowserWindow(props) {
+  const [isMinimized, setIsMinimized] = useState(false);
   return (
-    <StyledBrowserWindow>
+    <StyledBrowserWindow isMinimized={isMinimized}>
       <header className="browserWindow-header">
         <div className="header-options">
-          <button className="options-icon">
+          <button onClick={() => setIsMinimized(true)} className="options-icon">
             <RemoveIcon />
           </button>
-          <button className="options-icon">
+          <button
+            onClick={() => setIsMinimized(false)}
+            className="options-icon"
+          >
             <StopOutlinedIcon />
           </button>
           <button className="options-icon">
