@@ -3,9 +3,55 @@ import styled from "styled-components";
 
 const StyledLandingPage = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  & > .scrolldown-wrapper {
+    text-align: center;
+    bottom: 0;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+  }
+
+  & > .scrolldown {
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    height: 46px;
+    margin: 0 auto 8px;
+    text-align: center;
+    width: 30px;
+  }
+
+  & > .scrolldown-p1,
+  .scrolldown-p2 {
+    animation-duration: 1.5s;
+    animation-name: scrolldown;
+    animation-iteration-count: infinite;
+    fill: black;
+  }
+
+  & > .scrolldown-p2 {
+    animation-delay: 0.75s;
+  }
+
+  @keyframes scrolldown {
+    0% {
+      opacity: 0.5;
+      transform: translateY(-8px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+  }
 
   & > .circle {
     z-index: -1;
@@ -25,7 +71,13 @@ const StyledLandingPage = styled.div`
     width: 80%;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20vh;
+    margin-bottom: 15vh;
+
+    & > .content_text {
+      width: 60%;
+      font-size: 1.5rem;
+      margin-right: 5rem;
+    }
 
     & > .content_div_svg {
       position: relative;
@@ -37,8 +89,8 @@ const StyledLandingPage = styled.div`
         content: "";
         position: absolute;
         display: block;
-        width: 100%;
-        height: 100%;
+        width: 500px;
+        height: 500px;
         background-color: #639fabff;
         opacity: 0.5;
         border-radius: 50%;
@@ -246,6 +298,13 @@ function LandingPage() {
               transform="translate(-58.78049 -225.05938)"
               fill="#3f3d56"
             />
+          </svg>
+        </div>
+      </div>
+      <div className="scrolldown-wrapper">
+        <div className="scrolldown">
+          <svg height="30" width="10">
+            <circle className="scrolldown-p2" cx="5" cy="15" r="4" />
           </svg>
         </div>
       </div>
