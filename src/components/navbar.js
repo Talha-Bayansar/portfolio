@@ -2,13 +2,16 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledNavbar = styled.div`
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 15rem;
   background-color: #222222ff;
   color: white;
-  height: 5vh;
+  height: 8vh;
 
   & > .navbar_left {
     color: #639fabff;

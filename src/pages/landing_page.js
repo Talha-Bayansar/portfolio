@@ -4,7 +4,7 @@ import styled from "styled-components";
 const StyledLandingPage = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 100vh;
 
@@ -53,6 +53,21 @@ const StyledLandingPage = styled.div`
     }
   }
 
+  @keyframes bubble1 {
+    0% {
+      width: calc(300px * 1.1);
+      height: calc(300px * 1.1);
+    }
+    50% {
+      width: calc(300px * 0.9);
+      height: calc(300px * 0.9);
+    }
+    100% {
+      width: calc(300px * 1.1);
+      height: calc(300px * 1.1);
+    }
+  }
+
   & > .circle {
     z-index: -1;
     position: absolute;
@@ -64,6 +79,7 @@ const StyledLandingPage = styled.div`
     background-color: #639fabff;
     opacity: 0.5;
     border-radius: 50%;
+    animation: bubble1 5s infinite;
   }
 
   & > .landingPage_content {
@@ -71,7 +87,7 @@ const StyledLandingPage = styled.div`
     width: 80%;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15vh;
+    margin-top: 10rem;
 
     & > .content_text {
       width: 60%;
