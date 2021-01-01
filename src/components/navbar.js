@@ -29,6 +29,8 @@ const StyledNavbar = styled.div`
   @media only screen and (max-width: 1500px) {
     padding: 1rem 10rem;
   }
+  @media only screen and (max-width: 850px) {
+  }
 `;
 
 function Navbar() {

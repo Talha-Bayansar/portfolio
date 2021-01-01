@@ -114,6 +114,56 @@ const StyledLandingPage = styled.div`
       }
     }
   }
+
+  @media only screen and (max-width: 1500px) {
+    & > .landingPage_content {
+      & > .content_text {
+        font-size: 1.2rem;
+        width: 70%;
+      }
+      & > .content_div_svg::before {
+        top: 2rem;
+        width: 400px;
+        height: 400px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    & > .landingPage_content {
+      & > .content_text {
+        font-size: 1.2rem;
+        width: 100%;
+      }
+      & > .content_div_svg::before {
+        top: 5rem;
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    & > .landingPage_content {
+      & > .content_text {
+        font-size: 1.2rem;
+        width: 200%;
+      }
+    }
+  }
+  @media only screen and (max-width: 850px) {
+    & > .circle {
+      display: none;
+    }
+    & > .landingPage_content {
+      flex-direction: column;
+
+      & > .content_text {
+        font-size: 1.2rem;
+        width: 100%;
+        margin: unset;
+      }
+    }
+  }
 `;
 
 function LandingPage() {
