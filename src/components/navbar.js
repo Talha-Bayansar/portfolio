@@ -11,6 +11,7 @@ const StyledNavbar = styled.div`
   height: 5vh;
 
   & > .navbar_left {
+    color: #639fabff;
     font-weight: bold;
     letter-spacing: 3px;
     font-size: 20px;
