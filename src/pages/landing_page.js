@@ -164,6 +164,18 @@ const StyledLandingPage = styled.div`
       }
     }
   }
+
+  @media only screen and (max-width: 500px) {
+    & > .landingPage_content {
+      margin-top: unset;
+      position: relative;
+
+      & > .content_div_svg {
+        position: absolute;
+        opacity: 0.5;
+      }
+    }
+  }
 `;
 
 function LandingPage() {
