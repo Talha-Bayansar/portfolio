@@ -41,7 +41,7 @@ const StyledCard = styled.div`
   & .post-img {
     background-size: cover;
     background-position: center;
-    height: 300px;
+    min-height: 70%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-image: url(${(props) => props.url});

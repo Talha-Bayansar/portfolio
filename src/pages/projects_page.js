@@ -9,13 +9,15 @@ const StyledProjectsPage = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 92vh;
   background-color: #c9c9c9;
+  padding: 3rem;
 
   & > .projectPage_projects {
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    margin: 3rem 0 0;
   }
 `;
 
