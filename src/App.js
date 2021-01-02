@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Footer from "./components/footer";
 import Navbar from "./components/navbar";
 import LandingPage from "./pages/landing_page";
 import ProjectsPage from "./pages/projects_page";
@@ -18,6 +19,7 @@ function App() {
       <LandingPage />
       <ProjectsPage />
       <SkillsPage />
+      <Footer />
     </StyledApp>
   );
 }
