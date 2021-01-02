@@ -6,7 +6,11 @@ const StyledSkillsPage = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 3rem 9rem;
+  padding: 3rem 3rem 6rem;
+
+  & > .skillsPage_title {
+    margin-bottom: 3rem;
+  }
 
   & > .skillsPage_skills {
     display: flex;
