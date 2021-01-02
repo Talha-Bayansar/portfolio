@@ -1,0 +1,58 @@
+import React from "react";
+import styled from "styled-components";
+import Skill from "../components/skill";
+
+const StyledSkillsPage = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 3rem 9rem;
+
+  & > .skillsPage_skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+`;
+
+const skills = [
+  {
+    prim: "HTML",
+    sec: "Bootstrap",
+  },
+  {
+    prim: "CSS",
+    sec: "Sass",
+  },
+  {
+    prim: "Javascript",
+    sec: "React",
+  },
+  {
+    prim: "Java",
+    sec: "Spring",
+  },
+  {
+    prim: "Dart",
+    sec: "Flutter",
+  },
+  {
+    prim: "Git",
+    sec: "Github",
+  },
+];
+
+function SkillsPage() {
+  return (
+    <StyledSkillsPage>
+      <h1 className="skillsPage_title">Skills</h1>
+      <div className="skillsPage_skills">
+        {skills.map((s) => (
+          <Skill primSkill={s.prim} secSkill={s.sec} />
+        ))}
+      </div>
+    </StyledSkillsPage>
+  );
+}
+
+export default SkillsPage;
