@@ -12,6 +12,7 @@ const StyledNavbar = styled.div`
   background-color: #222222ff;
   color: white;
   height: 8vh;
+  z-index: 2;
 
   & > .navbar_left {
     color: #639fabff;
@@ -30,6 +31,19 @@ const StyledNavbar = styled.div`
     padding: 1rem 10rem;
   }
   @media only screen and (max-width: 850px) {
+    padding: 1rem 5rem;
+  }
+  @media only screen and (max-width: 500px) {
+    bottom: 0px;
+    padding: 1rem;
+
+    & > .navbar_left {
+      display: none;
+    }
+
+    & > .navbar_right {
+      width: 100%;
+    }
   }
 `;
 
