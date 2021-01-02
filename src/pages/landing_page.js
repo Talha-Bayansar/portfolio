@@ -169,6 +169,7 @@ const StyledLandingPage = styled.div`
     & > .landingPage_content {
       margin-top: unset;
       position: relative;
+      margin-bottom: 10rem;
 
       & > .content_div_svg {
         position: absolute;
