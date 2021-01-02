@@ -19,12 +19,34 @@ const StyledNavbar = styled.div`
     font-weight: bold;
     letter-spacing: 3px;
     font-size: 20px;
+    text-decoration: none;
+
+    &:visited {
+      color: #639fabff;
+    }
+
+    &:hover {
+      color: #bbcde5ff;
+    }
   }
 
   & > .navbar_right {
     display: flex;
     width: 20rem;
     justify-content: space-around;
+
+    .navbar_right_item {
+      color: white;
+      text-decoration: none;
+
+      &:visited {
+        color: white;
+      }
+
+      &:hover {
+        color: #c4c4c4;
+      }
+    }
   }
 
   @media only screen and (max-width: 1500px) {
@@ -50,11 +72,23 @@ const StyledNavbar = styled.div`
 function Navbar() {
   return (
     <StyledNavbar>
-      <div className="navbar_left">Talha Bayansar</div>
+      <a href="#" className="navbar_left">
+        Talha Bayansar
+      </a>
       <div className="navbar_right">
-        <span className="navbar_right_item">My work</span>
-        <span className="navbar_right_item">My skills</span>
-        <span className="navbar_right_item">Contact me</span>
+        <a href="#myWork" className="navbar_right_item">
+          My work
+        </a>
+        <a href="#mySkills" className="navbar_right_item">
+          My skills
+        </a>
+        <a
+          href="mailto:talha.bayansar@hotmail.com"
+          target="_blank"
+          className="navbar_right_item"
+        >
+          Contact me
+        </a>
       </div>
     </StyledNavbar>
   );

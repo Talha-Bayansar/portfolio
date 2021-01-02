@@ -50,7 +50,7 @@ const skills = [
 
 function SkillsPage() {
   return (
-    <StyledSkillsPage>
+    <StyledSkillsPage id="mySkills">
       <h1 className="skillsPage_title">Skills</h1>
       <div className="skillsPage_skills">
         {skills.map((s) => (
