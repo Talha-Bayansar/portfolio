@@ -44,7 +44,8 @@ const StyledCard = styled.div`
     min-height: 70%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background-image: url(${(props) => props.url});
+    background-image: url(${(props) => props.imgUrl});
+    border: 1px solid grey;
   }
   & .post-info {
     padding: 20px 30px 30px;
@@ -89,29 +90,25 @@ const StyledCard = styled.div`
 `;
 
 function Card(props) {
-  const { url } = props;
+  const { url, imgUrl, date, title, description } = props;
   return (
-    <StyledCard url={url}>
+    <StyledCard imgUrl={imgUrl}>
       <div className="post">
         <div className="post-front">
           <div className="post-img"></div>
           <div className="post-info">
-            <span>June 25, 2020</span>
-            <h2>Productivity: Expectations vs Reality</h2>
+            <span>{date}</span>
+            <h2>{title}</h2>
           </div>
         </div>
         <div className="post-back">
           <div className="post-except">
-            <h2>Productivity: Expectations vs Reality</h2>
-            <p>
-              Et hinc magna voluptatum usu, cum veniam graece et. Ius ea
-              scripserit temporibus, pri cu harum tacimates neglegentur. At
-              adipisci incorrupte nam. Cu qui sumo appareat constituto, possit
-              phaedrum inciderint ex usu, quis ignota cotidieque nam ea. Cum
-              deserunt periculis ocurreret.
-            </p>
+            <h2>{title}</h2>
+            <p>{description}</p>
           </div>
-          <a href="#">Read More</a>
+          <a href={url} target="_blank">
+            Go to website
+          </a>
         </div>
       </div>
     </StyledCard>

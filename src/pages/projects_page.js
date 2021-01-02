@@ -26,9 +26,9 @@ function ProjectsPage() {
     <StyledProjectsPage>
       <h1 className="projectPage_title">Projects</h1>
       <div className="projectPage_projects">
-        <Card url={babili} />
-        <Card url={menuCard} />
-        <Card url={webshop} />
+        <Card imgUrl={babili} />
+        <Card imgUrl={menuCard} />
+        <Card imgUrl={webshop} />
       </div>
     </StyledProjectsPage>
   );
