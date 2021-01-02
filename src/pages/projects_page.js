@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Card from "../components/card";
 import babili from "../images/babili.png";
-import menuCard from "../images/menuCard.png";
+import rekenbuddy from "../images/rekenbuddy.png";
 import webshop from "../images/webshop.png";
 
 const StyledProjectsPage = styled.div`
@@ -31,12 +31,12 @@ const projects = [
       "Babili is a platform for foreign civilians to learn Dutch by completing excercises given by the teacher.",
   },
   {
-    imgUrl: menuCard,
-    url: "https://talha-bayansar.github.io/menucard",
-    date: "October 2020",
-    title: "Menu Card",
+    imgUrl: rekenbuddy,
+    url: "https://testrekenbuddyleerkracht.web.app/",
+    date: "January 2021",
+    title: "Reken Buddy",
     description:
-      "Menu Card is a project made as an excercise for school. It is a menu card where you have to scan a table so you can make orders based on the menu.",
+      "Reken Buddy is a platform for students to make math excercises given by their teachers.",
   },
   {
     imgUrl: webshop,
