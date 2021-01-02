@@ -11,7 +11,9 @@ const StyledSkillsPage = styled.div`
   & > .skillsPage_skills {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
+    width: 80%;
   }
 `;
 

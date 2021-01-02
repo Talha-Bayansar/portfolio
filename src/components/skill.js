@@ -11,6 +11,7 @@ const StyledSkills = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 1.25rem;
+  margin: 1rem 1rem 5rem 1rem;
 
   & > .secondary_skill_div {
     position: absolute;
