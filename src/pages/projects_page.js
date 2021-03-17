@@ -37,7 +37,7 @@ const projects = [
         date: "January 2021",
         title: "Reken Buddy",
         description:
-            "Reken Buddy is a platform for students to make math excercises given by their teachers. This was made with React on the frontend and Java (Spring) with Postgresql on the backend.",
+            "Reken Buddy is a platform for students to make math excercises given by their teachers. This was made with React.js on the frontend and Java (Spring) with Postgresql on the backend.",
     },
     {
         imgUrl: memories,
@@ -53,7 +53,7 @@ const projects = [
         date: "february 2021",
         title: "Planner",
         description:
-            "A pet project to use as a planner to organize my work made with Next.js and firebase.",
+            "A pet project to use as a planner to organize my work made with Next.js and Firebase.",
     },
 ];
 
