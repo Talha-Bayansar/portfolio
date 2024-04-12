@@ -1,10 +1,12 @@
+import { cn } from "@/lib/utils";
 import { LayoutGrid, Mail, UserRound, type LucideIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import { buttonVariants } from "./ui/button";
 
 export const Navigation = () => {
   return (
-    <nav className="hidden md:flex md:flex-col md:gap-4 p-8 text-sm font-medium border">
+    <nav className="hidden md:flex md:flex-col p-8 text-sm font-medium border-r">
       <NavigationItem title="About me" href="#about-me" Icon={UserRound} />
       <NavigationItem title="Projects" href="#projects" Icon={LayoutGrid} />
       <NavigationItem title="Contact me" href="#contact-me" Icon={Mail} />
@@ -22,7 +24,10 @@ const NavigationItem = ({ title, href, Icon }: NavigationItemProps) => {
   return (
     <Link
       href={href}
-      className="flex items-center gap-3 rounded-lg text-muted-foreground transition-all hover:text-primary text-nowrap"
+      className={cn(
+        buttonVariants({ variant: "ghost" }),
+        "flex items-center justify-start gap-3"
+      )}
     >
       <Icon className="h-4 w-4" />
       {title}
