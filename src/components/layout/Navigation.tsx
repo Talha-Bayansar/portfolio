@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import { LayoutGrid, Mail, UserRound, type LucideIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
-import { buttonVariants } from "./ui/button";
+import { buttonVariants } from "../ui/button";
 
 export const Navigation = () => {
   return (
