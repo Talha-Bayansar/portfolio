@@ -37,7 +37,7 @@ export const ProjectCard = ({ project }: Props) => {
           ))}
         </ul>
       </CardHeader>
-      <CardContent className="flex-grow">
+      <CardContent className="flex-grow text-sm md:text-base">
         {/* <Accordion type="single" collapsible>
           <AccordionItem value={project.name}>
             <AccordionTrigger>Description</AccordionTrigger>

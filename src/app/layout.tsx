@@ -30,7 +30,7 @@ export default function RootLayout({
         )}
       >
         <Navigation />
-        <div className="ml-40">{children}</div>
+        <div className="md:ml-52">{children}</div>
       </body>
     </html>
   );
