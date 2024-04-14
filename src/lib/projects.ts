@@ -13,7 +13,7 @@ export const projects: Project[] = [
     name: "MyBarber",
     description:
       "MyBarber The application streamlines barbershop operations and appointment booking, promoting equal access and efficiency. It empowers owners to manage seamlessly while enabling clients to easily discover, schedule, and pay for appointments, fostering accessibility in the industry.",
-    period: "01/2024-03/2023",
+    period: "02/2024-03/2023",
     technologies: [
       "NextJS",
       "React",
@@ -26,6 +26,42 @@ export const projects: Project[] = [
     ],
     websiteLink: "https://myberber.vercel.app/en",
     sourceLink: "https://github.com/Talha-Bayansar/mybarber",
+  },
+  {
+    name: "Fast Meals (discontinued)",
+    description:
+      "Fast Meals is a platform for restaurant owners to manage their restaurant, incoming orders and employers. It enables clients to easily order and follow their meals.",
+    period: "01/2024-02/2023",
+    technologies: [
+      "NextJS",
+      "React",
+      "Typescript",
+      "tRPC",
+      "Xata",
+      "Vercel",
+      "NextAuth",
+      "Shadcn",
+    ],
+    websiteLink: "https://fast-mealz.vercel.app/nl",
+    sourceLink: "https://github.com/Talha-Bayansar/fast-meals",
+  },
+  {
+    name: "Selam",
+    description:
+      "Selam simplifies organization management by allowing you to create and manage groups within your organization. Add members, organize them into groups, and effortlessly keep an organized record of attendance at events and activities. Stay connected, coordinate events, and build a closer-knit community.",
+    period: "11/2023-12/2023",
+    technologies: [
+      "NextJS",
+      "React",
+      "Typescript",
+      "tRPC",
+      "Xata",
+      "Vercel",
+      "NextAuth",
+      "Shadcn",
+    ],
+    websiteLink: "https://selam-app.vercel.app/",
+    sourceLink: "https://github.com/Talha-Bayansar/selam-app",
   },
   {
     name: "Vlaams mensenrechteninstituut",

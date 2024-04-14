@@ -11,12 +11,12 @@ import { Project } from "@/lib/projects";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { Badge } from "./ui/badge";
-import {
-  Accordion,
-  AccordionItem,
-  AccordionTrigger,
-  AccordionContent,
-} from "./ui/accordion";
+// import {
+//   Accordion,
+//   AccordionItem,
+//   AccordionTrigger,
+//   AccordionContent,
+// } from "./ui/accordion";
 import { CodeXml, Globe } from "lucide-react";
 
 type Props = {
