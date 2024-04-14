@@ -6,7 +6,7 @@ import { buttonVariants } from "../ui/button";
 
 export const Navigation = () => {
   return (
-    <nav className="hidden md:flex md:flex-col p-8 text-sm font-medium border-r">
+    <nav className="hidden fixed left-0 top-0 bottom-0 md:flex md:flex-col pt-8 w-40 text-sm font-medium border-r">
       <NavigationItem title="About me" href="#about-me" Icon={UserRound} />
       <NavigationItem title="Projects" href="#projects" Icon={LayoutGrid} />
       <NavigationItem title="Contact me" href="#contact-me" Icon={Mail} />

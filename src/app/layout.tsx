@@ -21,16 +21,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head />
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased flex",
+          "h-screen bg-background font-sans antialiased flex",
           fontSans.variable
         )}
       >
         <Navigation />
-        {children}
+        <div className="ml-40">{children}</div>
       </body>
     </html>
   );

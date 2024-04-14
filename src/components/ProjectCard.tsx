@@ -11,6 +11,13 @@ import { Project } from "@/lib/projects";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { Badge } from "./ui/badge";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "./ui/accordion";
+import { CodeXml, Globe } from "lucide-react";
 
 type Props = {
   project: Project;
@@ -18,7 +25,7 @@ type Props = {
 
 export const ProjectCard = ({ project }: Props) => {
   return (
-    <Card className="h-full">
+    <Card className="h-full flex flex-col">
       <CardHeader>
         <CardTitle>{project.name}</CardTitle>
         <CardDescription>{project.period}</CardDescription>
@@ -30,19 +37,37 @@ export const ProjectCard = ({ project }: Props) => {
           ))}
         </ul>
       </CardHeader>
-      <CardContent>{project.description}</CardContent>
-      <CardFooter>
+      <CardContent className="flex-grow">
+        {/* <Accordion type="single" collapsible>
+          <AccordionItem value={project.name}>
+            <AccordionTrigger>Description</AccordionTrigger>
+            <AccordionContent>{project.description}</AccordionContent>
+          </AccordionItem>
+        </Accordion> */}
+        {project.description}
+      </CardContent>
+      <CardFooter className="gap-2">
         {project.sourceLink && (
           <Button asChild>
-            <Link target="_blank" href={project.sourceLink}>
-              Source
+            <Link
+              target="_blank"
+              className="flex gap-2"
+              href={project.sourceLink}
+            >
+              <span>Source</span>
+              <CodeXml />
             </Link>
           </Button>
         )}
         {project.websiteLink && (
           <Button asChild>
-            <Link target="_blank" href={project.websiteLink}>
-              Website
+            <Link
+              target="_blank"
+              className="flex gap-2"
+              href={project.websiteLink}
+            >
+              <span>Website</span>
+              <Globe />
             </Link>
           </Button>
         )}
