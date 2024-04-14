@@ -6,12 +6,16 @@ import { Textarea } from "./ui/textarea";
 import { sendEmail } from "@/lib/email";
 import { ContactMeSendButton } from "./ContactMeSendButton";
 import { useFormState } from "react-dom";
+import { toast } from "sonner";
 
 export const ContactMeForm = () => {
   const [state, formAction] = useFormState(sendEmail, null);
 
   useEffect(() => {
     if (state === true) {
+      toast("Email sent successfully.");
+    } else if (state === false) {
+      toast("Something went wrong while sending email. Try again.");
     }
   }, [state]);
 
