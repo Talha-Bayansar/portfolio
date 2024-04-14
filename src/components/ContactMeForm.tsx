@@ -1,17 +1,27 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
-import { Button } from "./ui/button";
-import { Send } from "lucide-react";
+import { sendEmail } from "@/lib/email";
+import { ContactMeSendButton } from "./ContactMeSendButton";
+import { useFormState } from "react-dom";
 
 export const ContactMeForm = () => {
+  const [state, formAction] = useFormState(sendEmail, null);
+
+  useEffect(() => {
+    if (state === true) {
+    }
+  }, [state]);
+
   return (
-    <form action="" className="flex flex-col gap-4">
+    <form action={formAction} className="flex flex-col gap-4">
       <div className="flex flex-col gap-1">
-        <label htmlFor="full-name" className="font-medium text-sm">
+        <label htmlFor="fullName" className="font-medium text-sm">
           Full name
         </label>
-        <Input id="full-name" name="full-name" />
+        <Input id="fullName" name="fullName" />
       </div>
       <div className="flex flex-col gap-1">
         <label htmlFor="email" className="font-medium text-sm">
@@ -25,9 +35,7 @@ export const ContactMeForm = () => {
         </label>
         <Textarea id="message" name="message" rows={8} />
       </div>
-      <Button className="flex gap-2" type="submit">
-        Send <Send className="w-4" />
-      </Button>
+      <ContactMeSendButton />
     </form>
   );
 };
