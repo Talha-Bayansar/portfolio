@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { type Metadata } from "next";
 import { Navigation } from "@/components/layout/Navigation";
 import { Toaster } from "@/components/ui/sonner";
+import { Analytics } from "@vercel/analytics/react";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -34,6 +35,7 @@ export default function RootLayout({
         <Navigation />
         <div className="md:ml-52">{children}</div>
         <Toaster />
+        <Analytics />
       </body>
     </html>
   );
