@@ -6,6 +6,7 @@ import { type Metadata } from "next";
 import { Navigation } from "@/components/layout/Navigation";
 import { Toaster } from "@/components/ui/sonner";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -36,6 +37,7 @@ export default function RootLayout({
         <div className="md:ml-52">{children}</div>
         <Toaster />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
