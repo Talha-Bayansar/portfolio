@@ -10,7 +10,25 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    name: "MyBarber",
+    name: "Deed Steps",
+    description:
+      "Deed Steps is a versatile application designed to facilitate seamless group collaboration and incentivize positive actions through rewards. With Deed Steps, users can create groups tailored to their interests, projects, or communities, fostering a sense of unity and purpose among members.",
+    period: "04/2024-Present",
+    technologies: [
+      "NextJS",
+      "React",
+      "Typescript",
+      "Drizzle ORM",
+      "Turso SQLite Database",
+      "Vercel",
+      "Lucia Auth",
+      "Shadcn",
+    ],
+    websiteLink: "https://deed-steps.vercel.app",
+    sourceLink: "https://github.com/Talha-Bayansar/Deen-Steps",
+  },
+  {
+    name: "MyBarber (discontinued)",
     description:
       "MyBarber The application streamlines barbershop operations and appointment booking, promoting equal access and efficiency. It empowers owners to manage seamlessly while enabling clients to easily discover, schedule, and pay for appointments, fostering accessibility in the industry.",
     period: "02/2024-03/2023",
@@ -22,6 +40,7 @@ export const projects: Project[] = [
       "Xata",
       "Vercel",
       "NextAuth",
+      "i18n",
       "Shadcn",
     ],
     websiteLink: "https://myberber.vercel.app/en",
@@ -40,6 +59,7 @@ export const projects: Project[] = [
       "Xata",
       "Vercel",
       "NextAuth",
+      "i18n",
       "Shadcn",
     ],
     websiteLink: "https://fast-mealz.vercel.app/nl",
