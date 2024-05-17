@@ -13,7 +13,7 @@ export const projects: Project[] = [
     name: "Deed Steps",
     description:
       "Deed Steps is a versatile application designed to facilitate seamless group collaboration and incentivize positive actions through rewards. With Deed Steps, users can create groups tailored to their interests, projects, or communities, fostering a sense of unity and purpose among members.",
-    period: "04/2024-Present",
+    period: "04/2024-05/2024",
     technologies: [
       "NextJS",
       "React",
